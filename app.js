@@ -5,7 +5,11 @@ const _ = require('lodash');
 
 const app = express();
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB");
+require('dotenv').config();
+const user = process.env.USER;
+const password = process.env.PASSWORD;
+
+mongoose.connect("mongodb+srv://" + user + ":" + password + "@cluster0.jzfhkdp.mongodb.net/todolistDB");
 
 const itemSchema = {
   name: String
