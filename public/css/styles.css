@@ -66,8 +66,9 @@ button {
   border-color: transparent;
   background-color: #3C84AB;
   color: #fff;
-  font-size: 30px;
+  font-size: 27px;
   padding: 1%;
+  margin: 5%;
   border-width: 0;
 }
 
